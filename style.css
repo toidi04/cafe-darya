@@ -1,0 +1,62 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Vazir', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d7eaff; /* Light blue background */
+}
+
+/* Form container styles */
+.form-container {
+    border: 2px solid #007BFF; /* Dark blue border */
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for aesthetic */
+    width: 350px; /* Form container width */
+    text-align: right; /* Align text to the right */
+}
+
+/* Styles for labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input fields styles */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Vazir', sans-serif; /* Set font to Vazir */
+}
+
+/* Button styles */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Dark blue background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Vazir', sans-serif; /* Set font to Vazir */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Change button background on hover */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتیجه</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d7eaff;
+            font-family: 'Vazir', sans-serif;
+            text-align: right;
+        }
+
+        .result-container {
+            border: 2px solid #007BFF;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: right;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            line-height: 1.8;
+            max-width: 400px;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        .address {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const name = urlParams.get('name');
+            const age = urlParams.get('age');
+            
+            document.write(`
+                <p>سلام چطوری ؟</p>
+                <p>ببین می‌دونم اسمت <span class="highlight">${name}</span>ه و حتی می‌دونم <span class="highlight">${age}</span> سالته</p>
+                <p>ولی <span class="highlight">${name}</span> جان باور کن ذره‌ای برام اهمیت نداره</p>
+                <p>تنها چیزی که برام مهمه اینه که بیای کافه ما یه چیزی سفارش بدی ما فروشمون بیشتر شه آخه آخر ماه چک داریم</p>
+                <p>بیا باشه ؟!</p>
+                <p>منتظریما!!!</p>
+                <p>...</p>
+                <p>بازم خودت می‌دونی من هیچ اجباری ندارم لینک پیجمونو برات گذاشتم خواستی بیا خوشحال میشیم</p>
+                <p><a href="https://www.instagram.com/cafedarya__?igsh=YWkzOGwwMnAxZWM5" target="_blank">لینک کافه ما</a></p>
+                <div class="address">آدرس: خیابان دانشگاه نرسیده به میدان نماز جنب بستنی نعمت کافه دریا 🌊</div>
+            `);
+        </script>
+    </div>
+</body>
+</html>
